@@ -1,0 +1,6 @@
+<junitreport todir="./reports">
+    <fileset dir=".">
+        <include name="**/*.xml" />
+    </fileset>
+    <report format="frames" todir="./reports/html" />
+</junitreport>

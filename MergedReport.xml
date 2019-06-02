@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" time="6.088">
+  <testsuite name="test URL test https://www.betterplay.com/casino" errors="0" failures="0" skipped="0" timestamp="2019-05-23T10:54:55" time="6.041" tests="3">
+    <testcase classname="test URL test https://www.betterplay.com/casino should load without error https://www.betterplay.com/casino" name="test URL test https://www.betterplay.com/casino should load without error https://www.betterplay.com/casino" time="2.095">
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/sports should load without error https://www.betterplay.com/sports" name="test URL test https://www.betterplay.com/sports should load without error https://www.betterplay.com/sports" time="0.904">
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/sports should load with error https://www.betterplay.com/sports" name="test URL test https://www.betterplay.com/sports should load with error https://www.betterplay.com/sports" time="2.006">
+    </testcase>
+  </testsuite>
+</testsuites>
