@@ -5,9 +5,15 @@ const {
   FILTER_SELECTOR
 } = SELECTORS;
 
-export  class ChartComponent {
+export class Component {
   constructor(page) {
     this.page = page;
+  }
+}
+
+export  class ChartComponent extends Component{
+  constructor(page) {
+    super(page)
   }
 
   async getChart() {
@@ -16,9 +22,9 @@ export  class ChartComponent {
 }
 
 
-export class FilterComponent {
+export class FilterComponent extends Component {
   constructor(page) {
-    this.page = page;
+    super(page)
   }
 
   async getFilter() {
