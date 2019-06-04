@@ -2,7 +2,7 @@ const _ = require('lodash');
 const fuzzy = require('fuzzy');
 
 const sites = [
-  'https://www.top10bestonlinecasinos.co.uk/',
+  'https://www.top10bestonlinecasinos.co.uk',
   'https://www.betterplay.com'
 ];
 

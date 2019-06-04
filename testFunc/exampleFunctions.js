@@ -19,3 +19,13 @@ export function B(url) {
     expect(chartComponent).toBeTruthy();
   });
 }
+
+export function C(url) {
+  it('should load with error ' + url, async () => {
+    await global.__PAGE__.goto(url);
+    const chartPage = new ChartPage(global.__PAGE__);
+    const chartComponent = await chartPage.getChartComponent();
+    await global.__PAGE__.screenshot({ path: './screenshots/bp_hart_' + Date.now() + '.png', fullPage: true });
+    expect(chartComponent).toBeTruthy();
+  });
+}

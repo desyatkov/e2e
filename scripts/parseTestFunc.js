@@ -27,13 +27,13 @@ function findNested(obj, key, memo) {
   return memo;
 }
 
-const descr = chalk.bold.underline;
+const descr = chalk.blueBright;
 
 traverse(ast, {
   FunctionDeclaration: function(path) {
     const fooName = path.node.id.name;
     const obj = {
-      name: `test: ${chalk.blue(fooName)} [${descr(findNested(path.node.body, "value")[0])}]`,
+      name: `test: ${chalk.magentaBright(fooName)} ${ descr('[ ')}${descr(findNested(path.node.body, "value")[0])}${descr(']')}`,
       value: fooName,
       short: fooName,
       disabled: false

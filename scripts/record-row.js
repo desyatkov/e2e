@@ -17,7 +17,7 @@ inquirer.prompt([
     type: 'autocomplete',
     name: 'url',
     suggestOnly: true,
-    message: 'Select URL',
+    message: 'Select Site',
     source: api.searchSitesApi,
     pageSize: 5,
     validate: function(val) {
@@ -28,7 +28,7 @@ inquirer.prompt([
     type: 'autocomplete',
     name: 'page',
     suggestOnly: true,
-    message: 'Select URL',
+    message: 'Select page',
     source: api.searchPagesApi,
     pageSize: 5,
     validate: function(val) {
