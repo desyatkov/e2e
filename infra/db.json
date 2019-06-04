@@ -1,0 +1,51 @@
+{
+  "tests": [
+    {
+      "id": "5ob1rxojwhgbi7g",
+      "url": "https://www.betterplay.com/casino",
+      "testList": [
+        "A"
+      ]
+    },
+    {
+      "id": 1,
+      "url": "https://www.betterplay.com/sports",
+      "testList": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "4ob1rxojwhgbi9g",
+      "url": "https://www.google.com",
+      "testList": [
+        "B"
+      ]
+    },
+    {
+      "url": "https://www.betterplay.com/slots",
+      "testList": [
+        "A",
+        "B"
+      ],
+      "id": "4ob1rxojwhgbi7g"
+    },
+    {
+      "url": "https://www.betterplay.com/sitemap",
+      "testList": [
+        "A",
+        "B"
+      ],
+      "id": "4ob1s8pjwhgeg5q"
+    },
+    {
+      "url": "https://www.betterplay.com/slots",
+      "testList": [
+        "A",
+        "B"
+      ],
+      "id": "4obpqgjwhr94ki"
+    }
+  ],
+  "count": 1
+}

@@ -2,7 +2,6 @@ import {ChartComponent, FilterComponent} from './ChartComponent';
 
 
 export default class ChartPage {
-
   constructor(page) {
     this.page = page;
   }

@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="3" failures="0" time="7.142">
-  <testsuite name="test URL test https://www.betterplay.com/casino" errors="0" failures="0" skipped="0" timestamp="2019-06-02T08:55:44" time="7.075" tests="3">
-    <testcase classname="test URL test https://www.betterplay.com/casino should load without error https://www.betterplay.com/casino" name="test URL test https://www.betterplay.com/casino should load without error https://www.betterplay.com/casino" time="2.186">
+<testsuites name="jest tests" tests="10" failures="3" time="20.72">
+  <testsuite name="test URL test https://www.betterplay.com/casino" errors="0" failures="3" skipped="0" timestamp="2019-06-04T12:04:29" time="20.624" tests="10">
+    <testcase classname="test URL test https://www.betterplay.com/casino should load without error https://www.betterplay.com/casino" name="test URL test https://www.betterplay.com/casino should load without error https://www.betterplay.com/casino" time="2.331">
     </testcase>
-    <testcase classname="test URL test https://www.betterplay.com/sports should load without error https://www.betterplay.com/sports" name="test URL test https://www.betterplay.com/sports should load without error https://www.betterplay.com/sports" time="1.124">
+    <testcase classname="test URL test https://www.betterplay.com/sports should load without error https://www.betterplay.com/sports" name="test URL test https://www.betterplay.com/sports should load without error https://www.betterplay.com/sports" time="1.145">
     </testcase>
-    <testcase classname="test URL test https://www.betterplay.com/sports should load with error https://www.betterplay.com/sports" name="test URL test https://www.betterplay.com/sports should load with error https://www.betterplay.com/sports" time="2.358">
+    <testcase classname="test URL test https://www.betterplay.com/sports should load with error https://www.betterplay.com/sports" name="test URL test https://www.betterplay.com/sports should load with error https://www.betterplay.com/sports" time="2.492">
+    </testcase>
+    <testcase classname="test URL test https://www.google.com should load with error https://www.google.com" name="test URL test https://www.google.com should load with error https://www.google.com" time="1.923">
+      <failure>Error: expect(received).toBeTruthy()
+
+Received: null
+    at Object.toBeTruthy (/Users/sergey.desyatkov/Documents/automationTestFE/testFunc/exampleFunctions.js:19:28)</failure>
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/slots should load without error https://www.betterplay.com/slots" name="test URL test https://www.betterplay.com/slots should load without error https://www.betterplay.com/slots" time="1.836">
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/slots should load with error https://www.betterplay.com/slots" name="test URL test https://www.betterplay.com/slots should load with error https://www.betterplay.com/slots" time="2.565">
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/sitemap should load without error https://www.betterplay.com/sitemap" name="test URL test https://www.betterplay.com/sitemap should load without error https://www.betterplay.com/sitemap" time="0.785">
+      <failure>Error: expect(received).toBeTruthy()
+
+Received: null
+    at Object.toBeTruthy (/Users/sergey.desyatkov/Documents/automationTestFE/testFunc/exampleFunctions.js:9:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/sitemap should load with error https://www.betterplay.com/sitemap" name="test URL test https://www.betterplay.com/sitemap should load with error https://www.betterplay.com/sitemap" time="2.377">
+      <failure>Error: expect(received).toBeTruthy()
+
+Received: null
+    at Object.toBeTruthy (/Users/sergey.desyatkov/Documents/automationTestFE/testFunc/exampleFunctions.js:19:28)</failure>
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/slots should load without error https://www.betterplay.com/slots" name="test URL test https://www.betterplay.com/slots should load without error https://www.betterplay.com/slots" time="1.123">
+    </testcase>
+    <testcase classname="test URL test https://www.betterplay.com/slots should load with error https://www.betterplay.com/slots" name="test URL test https://www.betterplay.com/slots should load with error https://www.betterplay.com/slots" time="2.516">
     </testcase>
   </testsuite>
 </testsuites>
