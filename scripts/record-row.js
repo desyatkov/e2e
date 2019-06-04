@@ -3,7 +3,7 @@ const fuzzy = require('fuzzy');
 const FileSync = require('lowdb/adapters/FileSync');
 const uniqid = require('uniqid');
 const low = require('lowdb');
-const searchSitesApi = require('../infra/sites');
+const api = require('../infra/sites');
 const listFunctions = require('./parseTestFunc');
 
 const adapter = new FileSync('infra/db.json');
@@ -17,8 +17,19 @@ inquirer.prompt([
     type: 'autocomplete',
     name: 'url',
     suggestOnly: true,
-    message: 'Select URL [tab to autocomplete]',
-    source: searchSitesApi,
+    message: 'Select URL',
+    source: api.searchSitesApi,
+    pageSize: 5,
+    validate: function(val) {
+      return val ? true : 'Type something!';
+    },
+  },
+  {
+    type: 'autocomplete',
+    name: 'page',
+    suggestOnly: true,
+    message: 'Select URL',
+    source: api.searchPagesApi,
     pageSize: 5,
     validate: function(val) {
       return val ? true : 'Type something!';
@@ -33,13 +44,10 @@ inquirer.prompt([
     searchable: true,
     default: [],
     validate: function(answer) {
-
       if (answer.length == 0) {
         return 'You must choose at least one color.';
       }
-
       return true;
-
     },
     source: function(answersSoFar, input) {
 
@@ -60,9 +68,10 @@ inquirer.prompt([
         resolve(data);
 
       });
-  }
-}]).then(function(answers) {
-  db.get('tests')
-    .push({...answers, id: uniqid()})
-    .write()
-});
+    }
+  }]).then(function(answers) {
+    const url = answers.url + answers.page
+    db.get('tests')
+      .push({url, id: uniqid(), testList: answers.testList})
+      .write()
+  });

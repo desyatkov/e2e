@@ -23,28 +23,12 @@
       ]
     },
     {
-      "url": "https://www.betterplay.com/slots",
+      "url": "https://www.betterplay.com/casino/articles",
+      "id": "sktwi21gzjwiczhjj",
       "testList": [
         "A",
         "B"
-      ],
-      "id": "4ob1rxojwhgbi7g"
-    },
-    {
-      "url": "https://www.betterplay.com/sitemap",
-      "testList": [
-        "A",
-        "B"
-      ],
-      "id": "4ob1s8pjwhgeg5q"
-    },
-    {
-      "url": "https://www.betterplay.com/slots",
-      "testList": [
-        "A",
-        "B"
-      ],
-      "id": "4obpqgjwhr94ki"
+      ]
     }
   ],
   "count": 1
