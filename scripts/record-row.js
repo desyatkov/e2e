@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fuzzy = require('fuzzy');
+const chalk = require('chalk');
 const FileSync = require('lowdb/adapters/FileSync');
 const uniqid = require('uniqid');
 const low = require('lowdb');
@@ -70,8 +71,9 @@ inquirer.prompt([
       });
     }
   }]).then(function(answers) {
-    const url = answers.url + answers.page
+    const url = answers.url + answers.page;
     db.get('tests')
       .push({url, id: uniqid(), testList: answers.testList})
-      .write()
+      .write();
+    console.log(chalk.green.bold("TEST ADDED SUCCESSFULLY"))
   });
