@@ -1,4 +1,7 @@
 export const config = {
+  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  ignoreHTTPSErrors: true,
+  dumpio: false,
   headless: true,
   slowMo: 0,
   isDevTools: false,
