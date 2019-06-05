@@ -35,6 +35,9 @@ inquirer.prompt([
     validate: function(val) {
       return val ? true : 'Type something!';
     },
+    when: function() {
+
+    }
   },
   {
     type: 'checkbox-plus',

@@ -5,6 +5,14 @@ module.exports = {
     preset: "jest-puppeteer",
     setupFilesAfterEnv: ["jest-extended", "expect-puppeteer"],
     coverageReporters: ["text-summary", "html"],
-    // reporters: [ "default", "jest-html-reporters" ],
-    reporters: [ "default", "jest-junit" ]
+    reporters: [ "default",
+        [ "jest-junit", {
+            suiteName: "SITE_TESTS",
+            output: "./reports/junit-report/junit.xml"
+        }],
+        ["jest-html-reporters", {
+            "publicPath": "./reports/html-report",
+            "filename": "report.html",
+            "expand": true
+        }] ]
 };
