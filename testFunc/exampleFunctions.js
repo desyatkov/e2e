@@ -15,7 +15,7 @@ export function B(url) {
     await global.__PAGE__.goto(url);
     const chartPage = new ChartPage(global.__PAGE__);
     const chartComponent = await chartPage.getChartComponent();
-    await global.__PAGE__.screenshot({ path: './screenshots/bp_hart_' + Date.now() + '.png', fullPage: true });
+    // await global.__PAGE__.screenshot({ path: './screenshots/bp_hart_' + Date.now() + '.png', fullPage: true });
     expect(chartComponent).toBeTruthy();
   });
 }
@@ -25,7 +25,7 @@ export function C(url) {
     await global.__PAGE__.goto(url);
     const chartPage = new ChartPage(global.__PAGE__);
     const chartComponent = await chartPage.getChartComponent();
-    await global.__PAGE__.screenshot({ path: './screenshots/bp_hart_' + Date.now() + '.png', fullPage: true });
+    // await global.__PAGE__.screenshot({ path: './screenshots/bp_hart_' + Date.now() + '.png', fullPage: true });
     expect(chartComponent).toBeTruthy();
   });
 }
